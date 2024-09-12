@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Business Daily Reader",
+  "version": "1.0",
+  "description": "Removes paywall elements from the Business Daily website",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.businessdailyafrica.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
